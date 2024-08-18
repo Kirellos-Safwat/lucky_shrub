@@ -1,0 +1,133 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #2e7d32, #8bc34a);
+    color: white;
+} 
+
+.nav {
+    margin-top: 20px;
+    flex-grow: 0.5;
+    /* background-color: #ff0000; */
+}
+
+.logo img {
+    width: 10vw;
+    max-width: 100px;
+    min-width: 75px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-list li {
+    display: inline;
+}   
+
+.nav-list a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+}
+
+/* Main Content Styling */
+.main-content {
+    margin: 20px;
+}
+
+.banner {
+    text-align: center;
+    padding: 50px;
+    background-color: #8bc34a;
+    border-radius: 8px;
+    /* background-image: url('main.jpg'); */
+    /* background-size: cover; */
+    color: white;
+    margin-bottom: 30px;
+}
+
+.three-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+@media (max-width: 525px) {
+    /* Header Styling */
+    .header {
+        display: block;
+        text-align: center;
+        padding: 20px;
+        background: linear-gradient(to bottom right, #2e7d32, #8bc34a);
+        color: white;
+    } 
+    .three-columns {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.column {
+    flex: 1;
+    background-color: #8bc34a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.column img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.column h2 {
+    margin: 20px 0;
+}
+
+/* Footer Styling */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    /* background-color: #2e7d32; */
+    /* background-image: url('footer.jpg'); */
+    background: linear-gradient(to bottom right, #8bc34a, #2e7d32);
+    /* background-size: cover; */
+    color: white;
+}
+
+.footer-left img {
+    width: 10vw;
+    max-width: 80px;
+    min-width: 50px;
+}
+
+.footer-right p {
+    margin: 0 0 0 1rem;
+}
