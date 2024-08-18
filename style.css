@@ -22,7 +22,7 @@ body {
     padding: 20px;
     background: linear-gradient(to bottom right, #2e7d32, #8bc34a);
     color: white;
-} 
+}
 
 .nav {
     margin-top: 20px;
@@ -45,11 +45,11 @@ body {
 
 .nav-list li {
     display: inline;
-}   
+}
 
 .nav-list a {
     text-decoration: none;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     color: white;
     font-weight: bold;
 }
@@ -77,6 +77,7 @@ body {
 }
 
 @media (max-width: 525px) {
+
     /* Header Styling */
     .header {
         display: block;
@@ -84,7 +85,8 @@ body {
         padding: 20px;
         background: linear-gradient(to bottom right, #2e7d32, #8bc34a);
         color: white;
-    } 
+    }
+
     .three-columns {
         flex-direction: column;
         justify-content: space-between;
